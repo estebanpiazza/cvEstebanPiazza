@@ -1,10 +1,11 @@
 *{color:white}
 body{background-color: black;}
-.row{vertical-align: middle;margin:0 auto}
-img{width: 50%;}
+#botones-principales{vertical-align: middle;margin:0 auto}
 .subtitulo{
     text-decoration: underline white;
 }
+#imagen-perfil{width: 50%;}
+#parrafo-inline{display: inline;vertical-align: center}
 /*********************************/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -22,13 +23,14 @@ body{
   background: -webkit-linear-gradient(left, #000428, #004e92);
 }
 .wrapper{
-  width: 800px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 .wrapper .card{
+  margin-left: 15px;
   background: #fff;
   width: calc(33% - 20px);
   height: 300px;
@@ -40,6 +42,7 @@ body{
   box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
 }
 .wrapper .card .circle{
+
   position: relative;
   height: 150px;
   width: 150px;
@@ -48,11 +51,13 @@ body{
 }
 .card .circle .box,
 .card .circle .box span{
+
   position: absolute;
   top: 50%;
   left: 50%;
 }
 .card .circle .box{
+
   height: 100%;
   width: 100%;
   background: #fff;
@@ -66,6 +71,7 @@ body{
 .card .circle .box span,
 .wrapper .card .text{
   background: -webkit-linear-gradient(left, #000428, #004e92);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color:transparent;
 }
